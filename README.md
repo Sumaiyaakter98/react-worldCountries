@@ -1,16 +1,41 @@
-# React + Vite
+# 🌍 World Country Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive React application that fetches and displays world countries data using modern React features (like `Suspense` and `use`), allowing users to explore different nations, view their details, and track visited countries.
 
-Currently, two official plugins are available:
+🔗 **[View Live Site](https://explorecountries-info.netlify.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* **Data Fetching with React `Suspense` & `use`**: Modern asynchronous data loading in functional React components.
+* **Responsive Grid Layout**: Clean and modern CSS Grid & Flexbox layout that adapts to all screen sizes.
+* **Country Details**: View flags, common names, population, and land area of various countries.
+* **Country Categorization**: Automatically categorizes countries as "Big Country" or "Small Country" based on their area.
+* **Visited Tracker**: Interactive buttons to mark countries as "Visited" and keep track of your travel bucket list.
+* **UI Effects**: Smooth hover transitions and custom styling for visited states.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** React (JSX)
+* **Styling:** CSS3 (Grid, Flexbox, Responsive Design)
+* **Data Source:** [REST Countries API](https://restcountries.com/) / Programming Hero API
+
+---
+
+## 📁 Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+│   ├── Countries/
+│   │   ├── Countries.jsx
+│   │   └── Countries.css
+│   └── Country/
+│       ├── Country.jsx
+│       └── Country.css
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
